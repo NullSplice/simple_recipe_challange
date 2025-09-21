@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    background: hsl(30 54% 90%);
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+}
+
+/* --- Mobile defaults (edge-to-edge image) --- */
+.card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.hero {
+    margin: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+/* --- Desktop changes --- */
+@media (min-width: 768px) {
+    body { padding: 30px; }         
+    .card {
+        border-radius: 16px;          
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        overflow: visible;            
+    }
+
+    .content { padding: 32px; }
+
+    .hero {
+        margin: 24px 24px 0;
+    }
+
+    .hero img {
+        border-radius: 12px;
+    }
+}
+
+/* Content area */
+.content {
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Young Serif", serif;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+}
+
+.sub_title {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+/* Prep time box */
+.prep_time {
+    background: hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.prep_title {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Young Serif", serif;
+}
+
+.prep_list {
+    padding-left: 20px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 10px; 
+}
+
+/* Nutrition table */
+.nutrition_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition_table th,
+.nutrition_table td {
+    padding: 10px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    text-align: left;
+}
+
+.nutrition_table th {
+    font-weight: normal;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition_table td {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Desktop style */
+@media (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .content {
+    padding: 40px;
+  }
+}
